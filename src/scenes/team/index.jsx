@@ -22,11 +22,53 @@ const Team = () => {
 
     const columns = [
         { field: "id", headerName: "ID" },
-        { field: "name", headerName: "Name" },
-        { field: "email", headerName: "Email" },
-        { field: "age", headerName: "Age" },
-        { field: "phone", headerName: "Phone" },
-        { field: "access", headerName: "Access" },
+        {
+            field: "name",
+            headerName: "Name",
+            flex: 1,
+            cellClassName: "name-column--cell",
+        },
+        {
+            field: "age",
+            headerName: "Age",
+            type: "number",
+            headerAlign: "left",
+            align: "left",
+        },
+        { field: "phone", headerName: "Phone Number", flex: 1 },
+        { field: "email", headerName: "Email", flex: 1 },
+
+        {
+            field: "access",
+            headerName: "Access",
+            flex: 1,
+            renderCell: ({ row: { access } }) => {
+                return (
+                    <Box
+                        width="60%"
+                        m="0 auto"
+                        p="5px"
+                        display="flex"
+                        justifyContent="center"
+                        backgroundColor={
+                            access === "admin"
+                                ? colors.greenAccent[600]
+                                : colors.greenAccent[800]
+                        }
+                        borderRadius="4px"
+                    >
+                        {access === "admin" && (
+                            <AdminPanelSettingsOutlinedIcon />
+                        )}
+                        {access === "manager" && <SecurityOutlinedIcon />}
+                        {access === "user" && <LockOpenOutlinedIcon />}
+                        <Typography color={colors.grey[100]} sx={{ ml: "5px" }}>
+                            {access}
+                        </Typography>
+                    </Box>
+                );
+            },
+        },
     ];
 
     return (
