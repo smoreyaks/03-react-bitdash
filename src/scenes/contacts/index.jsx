@@ -42,7 +42,7 @@ const Contacts = () => {
     return (
         <Box m="20px">
             <Header
-                title="CONTACTS"
+                title="Contacts"
                 subtitle="List of Contacts for Future Reference"
             />
             <Box

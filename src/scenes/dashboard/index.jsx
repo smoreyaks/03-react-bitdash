@@ -13,7 +13,7 @@ const Dashboard = () => {
                 alignItems="center"
             >
                 <Header
-                    title="DASHBOARD"
+                    title="Dashboard"
                     subtitle="Welcome to your Dashboard"
                 ></Header>
             </Box>
