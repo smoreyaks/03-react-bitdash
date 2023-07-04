@@ -16,9 +16,13 @@ import SettingsOutlinedIcon from "@mui/icons-material/SettingsOutlined";
 import PersonOutlinedIcon from "@mui/icons-material/PersonOutlined";
 import SearchIcon from "@mui/icons-material/Search";
 
+// Navbar
 const Topbar = () => {
+    // Theme
     const theme = useTheme();
     const colors = tokens(theme.palette.mode);
+
+    // Context
     const colorMode = useContext(ColorModeContext);
 
     return (
@@ -29,6 +33,7 @@ const Topbar = () => {
                 backgroundColor={colors.primary[400]}
                 borderRadius="3px"
             >
+                {/* Search Bar */}
                 <InputBase
                     sx={{
                         ml: 2,
@@ -46,7 +51,7 @@ const Topbar = () => {
                 </IconButton>
             </Box>
 
-            {/* Icons*/}
+            {/* Navigation Settings & User Icons */}
             <Box display="flex">
                 <IconButton onClick={colorMode.toggleColorMode}>
                     {theme.palette.mode === "dark" ? (
