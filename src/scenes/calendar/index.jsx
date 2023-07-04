@@ -1,9 +1,14 @@
+// React Hooks
 import { useState } from "react";
+
+// Full Calendar
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import listPlugin from "@fullcalendar/list";
+
+// MUII Components
 import {
     Box,
     Typography,
@@ -12,9 +17,14 @@ import {
     ListItemText,
     useTheme,
 } from "@mui/material";
+
+// Custom Components
 import Header from "../../components/Header";
+
+// Theme
 import { tokens } from "../../theme";
 
+// Format Date Function
 const formatDate = (date) => {
     return new Intl.DateTimeFormat("en-US", {
         year: "numeric",
