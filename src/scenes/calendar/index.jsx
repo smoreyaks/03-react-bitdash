@@ -3,6 +3,7 @@ import { useState } from "react";
 
 // Full Calendar
 import FullCalendar from "@fullcalendar/react";
+import { formatDate } from "@fullcalendar/core";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import timeGridPlugin from "@fullcalendar/timegrid";
 import interactionPlugin from "@fullcalendar/interaction";
@@ -23,16 +24,6 @@ import Header from "../../components/Header";
 
 // Theme
 import { tokens } from "../../theme";
-
-// Format Date Function
-const formatDate = (date) => {
-    return new Intl.DateTimeFormat("en-US", {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-    }).format(date);
-};
-console.log("FD:", formatDate);
 
 const Calendar = () => {
     //Theme
@@ -123,9 +114,9 @@ const Calendar = () => {
                             listPlugin,
                         ]}
                         headerToolbar={{
-                            left: "prev, next, today",
+                            left: "prev,next,today",
                             center: "title",
-                            right: "dayGridMonth, timeGridWeek, timeGridDay, listMonth",
+                            right: "dayGridMonth,timeGridWeek,timeGridDay,listMonth",
                         }}
                         initialView="dayGridMonth"
                         editable={true}
@@ -141,12 +132,12 @@ const Calendar = () => {
                             {
                                 id: "101",
                                 title: "All-day Event",
-                                date: "2022-09-14",
+                                date: "2023-07-14",
                             },
                             {
                                 id: "102",
                                 title: "Timed Event",
-                                date: "2022-09-28",
+                                date: "2023-07-28",
                             },
                         ]}
                     />
