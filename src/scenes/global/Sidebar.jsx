@@ -100,6 +100,7 @@ const Sidebar = () => {
                                 <Typography
                                     variant="h3"
                                     color={colors.grey[100]}
+                                    fontWeight="bold"
                                 >
                                     ONE TRACK
                                 </Typography>
@@ -123,10 +124,12 @@ const Sidebar = () => {
                                     alt="profile-user"
                                     width="100px"
                                     height="100px"
-                                    src={`../../assets/user.png`}
+                                    src={`../../assets/Logo_Text.png`}
                                     style={{
                                         cursor: "pointer",
                                         borderRadius: "50%",
+                                        border: `2px solid ${colors.blueAccent[700]}`,
+                                        objectFit: "contain",
                                     }}
                                 />
                             </Box>
@@ -139,7 +142,7 @@ const Sidebar = () => {
                                         m: "10px 0 0 0",
                                     }}
                                 >
-                                    Rainlab
+                                    Rainlab Studio
                                 </Typography>
                                 <Typography
                                     variant="h5"
