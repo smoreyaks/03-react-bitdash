@@ -101,7 +101,7 @@ const Sidebar = () => {
                                     variant="h3"
                                     color={colors.grey[100]}
                                 >
-                                    ADMINIS
+                                    ONE TRACK
                                 </Typography>
                                 <IconButton
                                     onClick={() => setIsCollapsed(!isCollapsed)}
