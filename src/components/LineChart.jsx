@@ -4,6 +4,9 @@ import { ResponsiveLine } from "@nivo/line";
 import { mockLineData as data } from "../data/mockData";
 
 const LineChart = ({ isDashboard = false }) => {
+    const theme = useTheme();
+    const colors = tokens(theme.palette.mode);
+
     return (
         <ResponsiveLine
             data={data}
@@ -55,7 +58,8 @@ const LineChart = ({ isDashboard = false }) => {
             axisTop={null}
             axisRight={null}
             axisBottom={{
-                orient: "bottom",
+                // orient: "bottom",
+                tickValues: 5,
                 tickSize: 5,
                 tickPadding: 5,
                 tickRotation: 0,
@@ -65,6 +69,7 @@ const LineChart = ({ isDashboard = false }) => {
             }}
             axisLeft={{
                 tickSize: 5,
+                tickValues: 5,
                 tickPadding: 5,
                 tickRotation: 0,
                 legend: isDashboard ? undefined : "count",
