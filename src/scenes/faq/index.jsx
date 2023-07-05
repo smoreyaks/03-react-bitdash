@@ -18,6 +18,11 @@ const FAQ = () => {
                 defaultExpanded
                 sx={{
                     background: `${colors.primary[400]}`,
+                    borderTopLeftRadius: "10px",
+                    borderTopRightRadius: "10px",
+                    "&:before": {
+                        backgroundColor: "transparent !important",
+                    },
                 }}
             >
                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
@@ -33,7 +38,6 @@ const FAQ = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-
             {/* FAQ Accordion Q2 */}
             <Accordion
                 defaultExpanded
@@ -54,7 +58,6 @@ const FAQ = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-
             {/* FAQ Accordion Q3 */}
             <Accordion
                 defaultExpanded
@@ -75,7 +78,6 @@ const FAQ = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-
             {/* FAQ Accordion Q4 */}
             <Accordion
                 defaultExpanded
@@ -96,7 +98,6 @@ const FAQ = () => {
                     </Typography>
                 </AccordionDetails>
             </Accordion>
-
             {/* FAQ Accordion Q5 */}
             <Accordion
                 defaultExpanded
@@ -123,6 +124,8 @@ const FAQ = () => {
                 defaultExpanded
                 sx={{
                     background: `${colors.primary[400]}`,
+                    borderBottomLeftRadius: "10px !important",
+                    borderBottomRightRadius: "10px !important",
                 }}
             >
                 <AccordionSummary expandIcon={<ExpandMoreIcon />}>
