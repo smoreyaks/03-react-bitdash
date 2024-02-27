@@ -28,6 +28,7 @@ import { tokens } from "../../theme";
 const Calendar = () => {
     //Theme
     const theme = useTheme();
+    const eventHighlight = theme.palette.secondary.main;
     const colors = tokens(theme.palette.mode);
 
     // State
@@ -81,7 +82,7 @@ const Calendar = () => {
                             <ListItem
                                 key={event.id}
                                 sx={{
-                                    backgroundColor: colors.greenAccent[500],
+                                    backgroundColor: eventHighlight,
                                     margin: "10px 0 ",
                                     borderRadius: "2px",
                                 }}
@@ -131,7 +132,7 @@ const Calendar = () => {
                         initialEvents={[
                             {
                                 id: "101",
-                                title: "All-day Event",
+                                title: "All Day Event",
                                 date: "2023-07-14",
                             },
                             {
