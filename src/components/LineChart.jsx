@@ -63,7 +63,7 @@ const LineChart = ({ isDashboard = false }) => {
                 tickSize: 5,
                 tickPadding: 5,
                 tickRotation: 0,
-                legend: isDashboard ? undefined : "transportation",
+                legend: isDashboard ? undefined : "Transportation",
                 legendOffset: 36,
                 legendPosition: "middle",
             }}
@@ -72,7 +72,7 @@ const LineChart = ({ isDashboard = false }) => {
                 tickValues: 5,
                 tickPadding: 5,
                 tickRotation: 0,
-                legend: isDashboard ? undefined : "count",
+                legend: isDashboard ? undefined : "Count",
                 legendOffset: -40,
                 legendPosition: "middle",
             }}
