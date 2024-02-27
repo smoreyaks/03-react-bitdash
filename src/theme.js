@@ -15,6 +15,7 @@ export const tokens = (mode) => ({
                   700: "#3d3d3d",
                   800: "#292929",
                   900: "#141414",
+                  1000: "#000000",
               },
 
               primary: {
@@ -73,6 +74,7 @@ export const tokens = (mode) => ({
                   700: "#a3a3a3",
                   800: "#c2c2c2",
                   900: "#e0e0e0",
+                  1000: "#ffffff",
               },
 
               primary: {
@@ -161,7 +163,7 @@ export const themeSettings = (mode) => {
                           light: colors.grey[100],
                       },
                       background: {
-                          default: "#FCFCFC",
+                          default: colors.grey[1000],
                       },
                   }),
         },
@@ -170,7 +172,7 @@ export const themeSettings = (mode) => {
             fontFamily: ["Source Sans 3", "sans-serif"].join(","),
             fontSize: 12,
             h1: {
-                fontFamily: ["Source Sans 3", "sans-serif"].join(","),
+                fontFamily: ["Bakbak One", "sans-serif"].join(","),
                 fontSize: 40,
             },
 
