@@ -100,7 +100,6 @@ const Sidebar = () => {
                                 <Typography
                                     variant="h1"
                                     color={colors.grey[100]}
-                                    fontWeight="bold"
                                     fontSize="2rem"
                                 >
                                     BITDASH
