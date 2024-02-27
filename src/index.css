@@ -3,6 +3,9 @@
 
   /* Anta, Kode Mono, Unbounded, Bakbak One */ 
   @import url('https://fonts.googleapis.com/css2?family=Anta&family=Bakbak+One&family=Kode+Mono:wght@400..700&family=Unbounded:wght@200..900&display=swap');
+
+  /* Changa One */
+  @import url('https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Goldman:wght@400;700&display=swap');
   
 
 html, body, #root, .app, .content {
@@ -43,33 +46,17 @@ html, body, #root, .app, .content {
   font-style: normal;
 }
 
-.bakbak-one-regular {
-  font-family: "Bakbak One", sans-serif;
+
+/* Changa One */
+.changa-one-regular {
+  font-family: "Changa One", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
 
-
-/* 
-<uniquifier>: Use a unique and descriptive class name
-<weight>: Use a value from 200 to 900 
- */
-
-.kode-mono-type1 {
-  font-family: "Kode Mono", monospace;
-  font-optical-sizing: auto;
+.changa-one-regular-italic {
+  font-family: "Changa One", sans-serif;
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
 }
 
-/* 
-<uniquifier>: Use a unique and descriptive class name
-<weight>: Use a value from 200 to 900 
- */
-
-.unbounded-type2 {
-  font-family: "Unbounded", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-}
