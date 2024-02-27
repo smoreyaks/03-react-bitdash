@@ -63,7 +63,7 @@ const Team = () => {
                         {access === "manager" && <SecurityOutlinedIcon />}
                         {access === "user" && <LockOpenOutlinedIcon />}
                         <Typography color={colors.grey[100]} sx={{ ml: "5px" }}>
-                            {access}
+                            {access[0].toUpperCase() + access.substring(1)}
                         </Typography>
                     </Box>
                 );
