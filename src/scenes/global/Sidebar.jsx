@@ -98,11 +98,12 @@ const Sidebar = () => {
                                 ml="15px"
                             >
                                 <Typography
-                                    variant="h3"
+                                    variant="h1"
                                     color={colors.grey[100]}
                                     fontWeight="bold"
+                                    fontSize="2rem"
                                 >
-                                    ONE TRACK
+                                    BITDASH
                                 </Typography>
                                 <IconButton
                                     onClick={() => setIsCollapsed(!isCollapsed)}
