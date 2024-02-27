@@ -155,7 +155,7 @@ export const themeSettings = (mode) => {
                           main: colors.primary[100],
                       },
                       secondary: {
-                          main: colors.greenAccent[500],
+                          main: colors.greenAccent[700],
                       },
                       neutral: {
                           dark: colors.grey[700],
@@ -172,7 +172,7 @@ export const themeSettings = (mode) => {
             fontFamily: ["Source Sans 3", "sans-serif"].join(","),
             fontSize: 12,
             h1: {
-                fontFamily: ["Bakbak One", "sans-serif"].join(","),
+                fontFamily: ["Changa One", "sans-serif"].join(","),
                 fontSize: 40,
             },
 
